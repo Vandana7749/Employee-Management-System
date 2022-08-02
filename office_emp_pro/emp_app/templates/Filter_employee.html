@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Filter Employee</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+
+        <h1>Filter Employee Details</h1>
+        <hr>
+        </body>
+        <form action="/Filter_employee" method="post">
+            {% csrf_token %}
+              <label for="name">Name</label><br>
+              <input type="text" id="name" name="name" value="{{name}}"><br>
+            
+              <label for="dept">Department</label><br>
+              <input type="text" id="dept" name="dept" value="{{dept}}"><br>
+           
+              <label for="role">Role</label><br>
+              <input type="text" id="role" name="role" value="{{role}}"><br>
+            <br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        
+        
+    </body>
+</html>

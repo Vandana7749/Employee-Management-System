@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Add Employee</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>Add an Employee</h1>
+        <hr>
+        <form action="/Add_employee" method="post">
+            {% csrf_token %}
+              <label for="first_name">First Name</label><br>
+              <input type="text" id="first_name" name="first_name" value="{{first_name}}"><br>
+              <hr>
+              <label for="last_name">Last Name</label><br>
+              <input type="text" id="last_name" name="last_name" value="{{last_name}}"><br>
+              <hr>
+              <label for="dept">Department</label><br>
+              <input type="number" id="dept" name="dept" value="{{dept}}"><br>
+              <hr>
+              <label for="salary">Salary</label><br>
+              <input type="number" id="salary" name="salary" value="{{salary}}"><br>
+              <hr>
+              <label for="bonus">Bonus</label><br>
+              <input type="number" id="bonus" name="bonus" value="{{bonus}}"><br>
+              <hr>
+              <label for="role">Role</label><br>
+              <input type="number" id="role" name="role" value="{{role}}"><br>
+              <hr>
+              <label for="phone">Phone</label><br>
+              <input type="number" id="phone" name="phone" value="{{phone}}"><br>
+              <hr>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        
+    </body>
+</html>
